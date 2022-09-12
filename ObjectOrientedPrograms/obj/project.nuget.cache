@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "nqjp1SDc4G/86PtMOXVVC9qTDL48V4mVQb1ZlxiAsqo2dpnOunkNy2xxoXHJMW/WnXWnNy97P7BvqWT4LxhPxQ==",
+  "dgSpecHash": "8WZrUhRn2OhRJ6+0uHJv+ekllsVd+c3fvJztBv4dX2nERzF8mQyzA620L8VRzYx0gukFfKVE+9zKmjWFtllL0Q==",
   "success": true,
   "projectFilePath": "D:\\RFP\\PP\\ObjectOrientedPrograms\\ObjectOrientedPrograms\\ObjectOrientedPrograms.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

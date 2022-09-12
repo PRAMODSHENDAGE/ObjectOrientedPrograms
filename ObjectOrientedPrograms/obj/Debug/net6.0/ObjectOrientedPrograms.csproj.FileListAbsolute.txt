@@ -1,0 +1,17 @@
+D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\bin\Debug\net6.0\ObjectOrientedPrograms.exe
+D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\bin\Debug\net6.0\ObjectOrientedPrograms.deps.json
+D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\bin\Debug\net6.0\ObjectOrientedPrograms.runtimeconfig.json
+D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\bin\Debug\net6.0\ObjectOrientedPrograms.dll
+D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\bin\Debug\net6.0\ObjectOrientedPrograms.pdb
+D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\obj\Debug\net6.0\ObjectOrientedPrograms.csproj.AssemblyReference.cache
+D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\obj\Debug\net6.0\ObjectOrientedPrograms.GeneratedMSBuildEditorConfig.editorconfig
+D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\obj\Debug\net6.0\ObjectOrientedPrograms.AssemblyInfoInputs.cache
+D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\obj\Debug\net6.0\ObjectOrientedPrograms.AssemblyInfo.cs
+D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\obj\Debug\net6.0\ObjectOrientedPrograms.csproj.CoreCompileInputs.cache
+D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\obj\Debug\net6.0\ObjectOrientedPrograms.csproj.CopyComplete
+D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\obj\Debug\net6.0\ObjectOrientedPrograms.dll
+D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\obj\Debug\net6.0\refint\ObjectOrientedPrograms.dll
+D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\obj\Debug\net6.0\ObjectOrientedPrograms.pdb
+D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\obj\Debug\net6.0\ObjectOrientedPrograms.genruntimeconfig.cache
+D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\obj\Debug\net6.0\ref\ObjectOrientedPrograms.dll
