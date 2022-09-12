@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ObjectOrientedPrograms.StockManagement
 {
-    internal class Stock
+    internal class StockDetails
     {
         List<StockPortfolio> stocks = new List<StockPortfolio>();
         public void ReadJsonFile(string filePath)
