@@ -1,11 +1,13 @@
 ﻿using ObjectOrientedPrograms.InventoryManagement;
 using ObjectOrientedPrograms.InventoryManagementSystem;
+using ObjectOrientedPrograms.StockManagement;
 
 const string INVENTORY_DATA_FILE_PATH = @"D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\InventoryManagement\Inventory.json";
 const string INVENTORYDETAILS_DATA_FILE_PATH = @"D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\InventoryManagementSystem\InventoryDetails.json";
+const string STOCK_DATA_FILE_PATH = @"D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\StockManagement\Stock.json";
 while (true)
 {
-    Console.WriteLine("\n Select Program\n 1.Inventory Management\n 2.Inventory Management System");
+    Console.WriteLine("\n Select Program\n 1.Inventory Management\n 2.Inventory Management System\n 3.Stock Management");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -62,6 +64,9 @@ while (true)
                         break;
                 }
             }
+        case 3:
+            Stock stock = new Stock();
+            stock.ReadJsonFile(STOCK_DATA_FILE_PATH);
             break;
     }
 }
