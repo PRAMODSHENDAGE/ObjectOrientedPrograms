@@ -1,0 +1,43 @@
+{
+  "RiceList": [
+    {
+      "Name": "Basmati",
+      "Weight": 10,
+      "Price": 250
+    },
+    {
+      "Name": "Masura",
+      "Weight": 7,
+      "Price": 200
+    }
+  ],
+  "WheatList": [
+    {
+      "Name": "Sharbati",
+      "Weight": 5,
+      "Price": 150
+    },
+    {
+      "Name": "Durum",
+      "Weight": 8,
+      "Price": 200
+    },
+    {
+      "Name": "Lokwan",
+      "Weight": 15,
+      "Price": 100
+    }
+  ],
+  "PulsesList": [
+    {
+      "Name": "Lentils",
+      "Weight": 2,
+      "Price": 50
+    },
+    {
+      "Name": "Beans",
+      "Weight": 3,
+      "Price": 80
+    }
+  ]
+}

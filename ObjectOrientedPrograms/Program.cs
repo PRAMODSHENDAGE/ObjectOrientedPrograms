@@ -1,14 +1,67 @@
 ﻿using ObjectOrientedPrograms.InventoryManagement;
+using ObjectOrientedPrograms.InventoryManagementSystem;
+
 const string INVENTORY_DATA_FILE_PATH = @"D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\InventoryManagement\Inventory.json";
+const string INVENTORYDETAILS_DATA_FILE_PATH = @"D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\InventoryManagementSystem\InventoryDetails.json";
 while (true)
 {
-    Console.WriteLine("\n Select Program\n 1.Inventory Management");
+    Console.WriteLine("\n Select Program\n 1.Inventory Management\n 2.Inventory Management System");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
         case 1:
             Inventory inventory = new Inventory();
             inventory.ReadJsonFile(INVENTORY_DATA_FILE_PATH);
+            break;
+
+        case 2:
+            while (true)
+            {
+                Console.WriteLine("Select Option\n 1.Add List\n 2.Delete List\n 3.Edit List");
+                int option1 = Convert.ToInt32(Console.ReadLine());
+                switch (option1)
+                {
+                    case 1:
+                        InventoryFactory factory = new InventoryFactory();
+                        factory.ReadJsonFile(INVENTORYDETAILS_DATA_FILE_PATH);
+                        InventoryDetails detail = new InventoryDetails()
+                        {
+                            Name = "Lokwan",
+                            Weight = 10,
+                            Price = 100
+                        };
+                        factory.AddInventory("WheatList", detail);
+                        factory.WriteToJson(INVENTORYDETAILS_DATA_FILE_PATH);
+                        Console.WriteLine("\n");
+                        break;
+
+                    case 2:
+                        InventoryFactory factory1 = new InventoryFactory();
+                        factory1.ReadJsonFile(INVENTORYDETAILS_DATA_FILE_PATH);
+                        InventoryDetails detail1 = new InventoryDetails()
+                        {
+                            Name = "Wada",
+                            Weight = 10,
+                            Price = 300
+                        };
+                        factory1.DeleteInventory("RiceList", "Wada");
+                        factory1.WriteToJson(INVENTORYDETAILS_DATA_FILE_PATH);
+                        Console.WriteLine("\n");
+                        break;
+
+                    case 3:
+                        InventoryFactory factory2 = new InventoryFactory();
+                        factory2.ReadJsonFile(INVENTORYDETAILS_DATA_FILE_PATH);
+                        factory2.EditInventory("WheatList", "Lokwan");
+                        factory2.WriteToJson(INVENTORYDETAILS_DATA_FILE_PATH);
+                        Console.WriteLine("\n");
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid Choice");
+                        break;
+                }
+            }
             break;
     }
 }
