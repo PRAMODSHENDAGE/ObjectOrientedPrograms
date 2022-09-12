@@ -1,13 +1,16 @@
 ﻿using ObjectOrientedPrograms.InventoryManagement;
 using ObjectOrientedPrograms.InventoryManagementSystem;
 using ObjectOrientedPrograms.StockManagement;
+using ObjectOrientedPrograms.StockManagementSystem;
 
 const string INVENTORY_DATA_FILE_PATH = @"D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\InventoryManagement\Inventory.json";
 const string INVENTORYDETAILS_DATA_FILE_PATH = @"D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\InventoryManagementSystem\InventoryDetails.json";
-const string STOCK_DATA_FILE_PATH = @"D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\StockManagement\Stock.json";
+const string STOCKDETAILS_DATA_FILE_PATH = @"D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\StockManagement\StockDetails.json";
+const string COMPANY_DATA_FILE_PATH = @"D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\StockManagementSystem\Company.json";
+const string STOCK_DATA_FILE_PATH = @"D:\RFP\PP\ObjectOrientedPrograms\ObjectOrientedPrograms\StockManagementSystem\Stock.json";
 while (true)
 {
-    Console.WriteLine("\n Select Program\n 1.Inventory Management\n 2.Inventory Management System\n 3.Stock Management");
+    Console.WriteLine("\n Select Program\n 1.Inventory Management\n 2.Inventory Management System\n 3.Stock Management\n 4.To Buy Shares\n 5.To Sell Stocks");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -65,8 +68,38 @@ while (true)
                 }
             }
         case 3:
-            Stock stock = new Stock();
-            stock.ReadJsonFile(STOCK_DATA_FILE_PATH);
+            StockDetails stock = new StockDetails();
+            stock.ReadJsonFile(STOCKDETAILS_DATA_FILE_PATH);
+            break;
+
+        case 4:
+            StockManagement stockManagement = new StockManagement();
+            stockManagement.ReadJsonFileCompany(COMPANY_DATA_FILE_PATH);
+            stockManagement.ReadJsonFileStock(STOCK_DATA_FILE_PATH);
+            Company company = new Company()
+            {
+                Symbol = "Amazon",
+                NoOfShares = 10,
+                PricePerShare = 80,
+            };
+            stockManagement.BuyCompanyShare(company);
+            stockManagement.WriteToJsonCompany(COMPANY_DATA_FILE_PATH);
+            stockManagement.WriteToJsonStock(STOCK_DATA_FILE_PATH);
+            break;
+
+        case 5:
+            StockManagement stockManagement1 = new StockManagement();
+            stockManagement1.ReadJsonFileCompany(COMPANY_DATA_FILE_PATH);
+            stockManagement1.ReadJsonFileStock(STOCK_DATA_FILE_PATH);
+            Stock stocks = new Stock()
+            {
+                Name = "Amazon",
+                NoOfShares = 10,
+                PricePerShare = 80,
+            };
+            stockManagement1.SellStockShares(stocks);
+            stockManagement1.WriteToJsonCompany(COMPANY_DATA_FILE_PATH);
+            stockManagement1.WriteToJsonStock(STOCK_DATA_FILE_PATH);
             break;
     }
 }
